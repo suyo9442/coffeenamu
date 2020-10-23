@@ -1,0 +1,374 @@
+* { padding: 0; margin: 0; font-family: 'square_r';}
+ul { list-style-type: none;}
+a {text-decoration: none; color: black;}
+
+@font-face {
+    font-family: 'square_r';
+    src: url('../font/NanumSquare_acR.ttf');
+}
+
+@font-face {
+    font-family: 'square_b';
+    src: url('../font/NanumSquare_acB.ttf');
+}
+
+@font-face {
+    font-family: 'square_eb';
+    src: url('../font/NanumSquare_acEB.ttf');
+}
+
+@font-face {
+    font-family: 'square_l';
+    src: url('../font/NanumSquare_acL.ttf');
+}
+
+@font-face {
+    font-family: 'gmarket_m';
+    src: url('../font/GmarketSansTTFMedium.ttf');
+}
+
+@font-face {
+    font-family: 'gmarket_l';
+    src: url('../font/GmarketSansTTFLight.ttf');
+}
+
+/* 헤더 */
+header {
+    width: 1200px; height: 100px; margin: 0 auto;
+    /* outline: 1px solid rgb(206, 203, 203); */
+    position: relative;
+}
+
+/* 헤더_로고 */
+header > a > .logo {
+    width: 64px; height: 64px;
+    padding: 18px 0 18px 18px;
+}
+
+
+/* 헤더_네비게이션 */
+#gnb {
+    width: 700px; height: 48px;
+    /* outline: 1px solid green; */
+    text-align: center;
+    position: relative;
+    top: -50px;
+    left: calc(1200px/4.5);
+}
+
+.depth1 {
+    width: (1200px / 2);
+    position: absolute;
+}
+
+.depth1 > li {
+    float: left;
+    width: 120px;
+}
+
+
+.depth1 > li > a {
+    font-size: 16px;
+}
+
+.depth2 > li > a {
+    font-size: 13px;
+}
+
+.depth2 {
+    margin-top: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.depth2 > li {
+    padding-bottom: 8px;
+}
+
+
+/* 2단계 hover */
+.depth1:hover .depth2 {
+    height: 100px;
+    opacity: 1;
+}
+
+/* 헤더_right */
+#right {
+    position: absolute;
+    right: 18px;
+    top: 45px;
+}
+
+#right > a > img:first-child {
+    width: 34px; height: 34px;
+    margin-right: 10px;
+}
+
+#right > a > img:last-child {
+    width: 32px; height: 32px;
+}
+
+
+
+/* 배너 */
+#banner {
+    width: 1920px; height: 600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.slider {
+    width: 5760px; margin: 0 auto;
+    position: absolute;
+    z-index: -99;
+    transition-duration: 0.4s;
+}
+
+#banner > .slider > img {
+    display: block;
+    float: left;
+}
+
+
+
+/* 콘텐츠1 */
+#content1 {
+    width: 1200px; height: 827px; margin: 0 auto;
+    /* outline: 1px solid burlywood; */
+    background-image: url('../img/이미지\ 1.png');
+    position: relative;
+    text-align: center;
+}
+
+#content1 > .title {
+    padding: 65px 0 50px 0;
+}
+
+#content1 > .title > p {
+    font-family: 'square_b';
+    font-size: 30px;
+}
+
+#content1 > .title > p > span {
+    font-family: 'square_b';
+    font-size: 30px;
+    color: #B5A189;
+}
+
+#content1 > .title > h1 {
+    font-size: 42px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.line {
+    width: 150px; height: 30px;
+    border-bottom: 1px solid #B5A189;
+    text-align: center;
+    margin-left: 523px;
+    margin-top: 10px;
+}
+
+#content1 > .title > h2 {
+    margin-top: 55px;
+    font-size: 26px;
+    font-family: 'square_l';
+    color: rgb(117, 117, 117);
+}
+
+
+#content1 > .menu {
+    width: 1015px; height: 360px;
+    /* outline: 1px solid red; */
+    position: absolute;
+    left: 90px;
+    top: 345px;
+}
+
+#content1 > .menu > div {
+    width: 208px; height: 255px;
+    margin-right: 60px;
+    margin-top: 103px;
+    background-color:#EAE9E5;
+    border-radius: 30px;
+    /* outline: 1px solid red; */
+    float: left;  
+}
+
+#content1 > .menu > .m4 {
+    margin-right: 0;
+}
+
+
+#content1 > .menu > div > img {
+    width: 200px; height: 200px;
+    margin-top: -110px;
+}
+
+#content1 > .menu > .m3 > img, 
+#content1 > .menu > .m4 > img {
+    width: 170px; height: 170px;
+    margin-top: -90px;
+} 
+
+
+#content1 > .menu > div > h1 {
+    color: #B0AAA2;
+    font-size: 20px;
+    font-family: 'square_b';
+    margin-top: 15px;
+}
+
+#content1 > .menu > div > h2 {
+    color: #B0AAA2;
+    font-size: 12px;
+    font-family: 'square_r';
+    margin-top: 10px;
+}
+
+#content1 > .menu > div > button {
+    width: 120px; height: 26px;
+    border-radius: 50px;
+    font-size: 10px;
+    background-color: #fff;
+    border: none;
+
+    margin-top: 38px;
+}
+
+
+#content1 > .pager {
+    position: absolute;
+    bottom: 40px;
+    left: 560px;
+}
+
+
+
+/* 콘텐츠2 */
+#content2 {
+    width: 1200px; height: 708px; margin: 0 auto;
+    /* outline: 1px solid red; */
+    background-image: url('../img/bgy.png');
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+#content2 > .title > h1 {
+    font-size: 42px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    padding-top: 100px;
+}
+
+#content2 > .title > h1 > span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.line {
+    width: 150px; height: 30px;
+    border-bottom: 1px solid #B5A189;
+    text-align: center;
+    margin-left: 523px;
+    margin-top: 10px;
+}
+
+#content2 > .title > h2 {
+    margin-top: 55px;
+    font-size: 26px;
+    font-family: 'square_l';
+}
+
+
+#content2 > .title > button {
+    width: 190px; height: 47px;
+    margin-top: 50px;
+    background-color: rgba(255, 222, 173, 0);
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+
+/* 신메뉴 주스들 */
+/* 주스1 */
+#content2 > .new > .n1 > img {
+    position: absolute;
+    left: 50px;
+    top: 180px;
+}
+
+#content2 > .new > .n1 > ul {
+    position: absolute;
+    top: 450px;
+    left: 360px;
+    font-size: 16px;
+    text-align: start;
+}
+
+
+#content2 > .new > div > ul > li {font-family: 'gmarket_m';}
+#content2 > .new > div > ul > li:nth-child(2) {
+    color: #E9B949;
+}
+
+/* 주스2 */
+#content2 > .new > .n2 > img {
+    position: absolute;
+    right: 100px;
+    top: 150px;
+}
+
+#content2 > .new > .n2 > ul {
+    position: absolute;
+    top: 480px;
+    right: 360px;
+    font-size: 16px;
+    text-align: end;
+}
+
+
+
+/* 주스3 */
+#content2 > .new > .n3 > img {
+    position: absolute;
+    right: -50px;
+    top: 260px;
+}
+
+
+#content2 > .new > .n3 > ul {
+    position: absolute;
+    top: 590px;
+    right: 310px;
+    font-size: 16px;
+    text-align: end;
+}
+
+
+
+/* 콘텐츠3 */
+#content3 {
+    width: 1920px; height: 802px; margin: 0 auto;
+}
+
+#content3 > .bg {
+    width: 1920px; height: 802px;
+    position: relative;
+}
+
+#content3 > .bg > .trans {
+    width: 1920px; height: 802px;
+    background-color: rgba(0, 0, 0, 0.582);
+    position: absolute;
+    top: 0;
+}
